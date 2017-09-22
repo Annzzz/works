@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+        <p>This is Pen.</p>
+        <p>This is a Car.</p>
+        <p>I'm Anju Baby.</p>
+        <p>Good morning</p>
+        <p>Hello hai</p> 
+        <script type="text/javascript">
+            $('p').each(function(){
+            var data = $(this);
+            data.html( data.text().replace(/(^\w+)/,'<strong>$1</strong>') );
+            });
+       </script>
+</body>
+</html>

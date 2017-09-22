@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Count</title>
+
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("#btnGetCount").click(function () {
+            var totalRowCount = $("#tblCustomers tr").length;
+           
+             alert("Total Row Count: " + totalRowCount);
+           
+           
+
+        });
+      $("#btn").click(function () {
+            var totalColCount = $("#tblCustomers th").length;
+           
+             alert("Total col Count: " + totalColCount);
+    });
+      });
+      </script>
+</head>
+<body>
+<table id="tblCustomers">
+<th>Flowers</th>
+<th>Animals</th>
+<th>Birds</th>
+  <tr>
+    <td>Rose</td>
+    <td>Cat</td>
+    <td>Parrot</td>
+  </tr>
+  <tr>
+    <td>Jasmine</td>
+    <td>Dog</td>
+    <td>Dove</td>
+  </tr>
+  <tr>
+    <td>Lotus</td>
+    <td>Rabbit</td>
+    <td>Crow</td>
+  </tr>
+  <tr>
+    <td>Euforbia</td>
+    <td>Monkey</td>
+    <td>Peacock</td>
+  </tr>
+  <tr>
+    <td>Jamanthi</td>
+    <td>Donkey</td>
+    <td>ostrich</td>
+  </tr>
+  <
+</table>
+<input type="button" id="btnGetCount" name="Count Rows" value="Count Rows">
+<input type="button" id="btn" name="Count Columns" value="Count Cols">
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+        var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+      if (hrs < 12)
+        alert("Good Morning");
+    else if (hrs >= 12 && hrs <= 17)
+        alert("Good Afternoon");
+    else if (hrs >= 17 && hrs <= 20)
+        alert("Good Evening");
+    else if (hrs >= 20 && hrs <= 24)
+        alert("Good Night");
+
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b> and welcome to Encodedna.com!';
+
+}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
