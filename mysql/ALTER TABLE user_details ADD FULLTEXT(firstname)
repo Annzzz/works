@@ -1,0 +1,10 @@
+ALTER TABLE user_details ADD FULLTEXT(firstname)
+SELECT *
+FROM  `user_details`
+WHERE
+    MATCH(`firstname`) AGAINST('appu' IN BOOLEAN MODE);
+
+SELECT *
+FROM  `user_details`
+WHERE
+    MATCH(`column1`) AGAINST('+test -mighty' IN BOOLEAN MODE);
